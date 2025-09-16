@@ -14,7 +14,7 @@ create table dbo.CustomerFlight(
     State char(2) not null constraint ck_CustomerFlight_State_cannot_be_blank check(State <> ''),
     Zip varchar(10) not null constraint ck_CustomerFlight_Zip_must_be_numeric check(zip not like '%[^0-9]%'),
     CountryOfResidence varchar(20) not null constraint ck_CustomerFlight_CountryOfResidence_not_blank check(CountryOfResidence <> ''),
-    PurchasedDate date not null constraint ck_CustomerFlight_PurchasedDate_between_Janualy_15_2005_and_the_current_date check(PurchasedDate between '2005-01-15' and getdate()),
+    PurchasedDate date not null constraint ck_CustomerFlight_PurchasedDate_between_Janualy_15_2005_and_the_current_date check(PurchasedDate between '2005-01-19' and getdate()),
     FlightDate datetime not null,
     DepartingAirport char(3) not null constraint ck_CustomerFlight_DepartingAirport_cannot_be_blank check(DepartingAirport <> ''),
     ArrivingAirport char(3) not null constraint ck_CustomerFlight_ArrivingAirport_cannot_be_blank check(ArrivingAirport <> ''),

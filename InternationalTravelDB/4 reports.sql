@@ -1,3 +1,4 @@
+use InternationalTravelDB
 --1) In which year did International make the most money?    
 select top 1 TotalProfit = sum(c.TicketPrice), TopYear = datepart(year, c.PurchasedDate)
 from CustomerFlight c 

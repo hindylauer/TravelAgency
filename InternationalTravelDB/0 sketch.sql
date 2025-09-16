@@ -13,7 +13,7 @@ CustomerFlight
      State char(2) not null not blank
      Zip varchar(10) not null must be all numeric
      CustomerCountry varchar(20) not null not blank
-     PurchasedDate date not null between 1/15/2005 and current
+     PurchasedDate date not null between 1/19/2005 and current
      FlightDate datetime not null 
      DepartingAirport char(3) not null not blank
      ArrivingAirport char(3) not null not blank
